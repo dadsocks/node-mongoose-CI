@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: DZ3iI53um7err4P2Nh6IgsjPbcxHchc5AXLOQYITWXWqlQrbhIjv3W70DqANORE33dvlwC5H2V/H1Nrx0D/KSM4mVwVW5yl3NL2KAEssaoGbbLk5CYgQEmZCpiHAdTov9Dh8tezI6QlDWbFor43tnvelwRD+SozFncrY9IQolUj3eJG54BsJeYZZsP9a+5kYVX2sQgN6kx8b4zf3q5XMNnzRNp1tEoej/8NnxSf2p2XMzDN0oKBFPRMVbIAdmBObFdwq23e+a+qyNCXYbcfy0p0Bz1LilHelXeW1gjucanhxCXFP0sUWNd+DL1C2lH4B4auqhcf7gsCWiI13S59cAYrMFfS4yiXtqUPD3xv1MimI33f4eGS48SYAVNdO/P6Px7UmmhwGxjmCIE88KbqZXLuIJMVyRkOnyptbGR4Beqd+Lc54iAHBmMct9viaOpycIt8T/Aknq7oGXmn8NKVFq87lX8aakiynNhSpkHtp/U0FRxrIQPYEZBOrSuGbZtjc2jY4btMi9Ps2kGdyaVxQqSIKlnjdG9GCuSKoF4YQWlL2j9DsbF9gwCzvj55muNaVoEquaomCakcOUcdQIKCUm8f3afMgrXpeyLC3XQyK8byZ1Hy6LLeU6Kd2U2DMo41/pZ8EhnvwmgjDm9aCsR79F6SRkLs5gXKmmFMfjfbCbOs=
+  app: thawing-retreat-40936
+  on:
+    repo: dadsocks/node-mongoose-CI
+    branch: feature/with-tests
